@@ -1,0 +1,32 @@
+# Node.js (backend + frontend if using Node tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+dist/
+build/
+
+# Logs
+logs
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Frontend specific
+frontend/node_modules/
+frontend/.env
+frontend/.next/    # if using Next.js
+frontend/.parcel-cache/
+frontend/build/
+
+# Backend specific
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/coverage/
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+                            
