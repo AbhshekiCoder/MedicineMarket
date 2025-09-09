@@ -12,7 +12,8 @@ declare global {
   }
 }
 
-const JWT_SECRET = process.env.JWT_SECRET || "supersecretkey";
+const JWT_SECRET = process.env.JWT_SECRET || "123456";
+
 
 interface UserPayload {
   _id: string;

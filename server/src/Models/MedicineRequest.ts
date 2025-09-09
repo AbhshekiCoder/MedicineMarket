@@ -13,7 +13,7 @@ const medicineRequestSchema = new mongoose.Schema(
       ref: "User",
     },
     medicineId: {
-      type: mongoose.Schema.Types.Number, // medicines.id is serial int
+      type: mongoose.Schema.Types.String, // medicines.id is serial int
       required: true,
       ref: "Medicine",
     },
