@@ -8,7 +8,7 @@ const orderSchema = new mongoose.Schema(
       index: true,
     },
     bidId: {
-      type: mongoose.Schema.Types.Number, // references bids.id (serial int)
+      type: mongoose.Schema.Types.String, // references bids.id (serial int)
       required: true,
       ref: "Bid",
     },
@@ -23,7 +23,7 @@ const orderSchema = new mongoose.Schema(
       ref: "User",
     },
     medicineId: {
-      type: mongoose.Schema.Types.Number, // references medicines.id (serial int)
+      type: mongoose.Schema.Types.String, // references medicines.id (serial int)
       required: true,
       ref: "Medicine",
     },

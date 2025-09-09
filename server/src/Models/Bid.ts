@@ -8,7 +8,7 @@ const bidSchema = new mongoose.Schema(
       index: true,
     },
     requestId: {
-      type: mongoose.Schema.Types.Number, // references medicineRequests.id (serial int)
+      type: mongoose.Schema.Types.String, // references medicineRequests.id (serial int)
       required: true,
       ref: "MedicineRequest",
     },

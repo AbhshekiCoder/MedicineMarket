@@ -4,8 +4,8 @@ import * as express from 'express';
 
 const router = express.Router();
 
-router.post("/bids", authMiddleware, submitBid);
-router.get("/bids/:requestId", authMiddleware, getBidsForRequest);
-router.post("/bids/:bidId/accept", authMiddleware, acceptBid);
+router.post("/", authMiddleware, submitBid);
+router.get("/:requestId", authMiddleware, getBidsForRequest);
+router.post("/:bidId/accept", authMiddleware, acceptBid);
 
 export default router;
